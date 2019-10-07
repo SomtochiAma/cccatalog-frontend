@@ -6,6 +6,7 @@ import ApiService from '@/api/ApiService';
 import App from './App';
 import store from './store';
 import GoogleAnalytics from './analytics/GoogleAnalytics';
+import i18n from './i18n'
 
 function createApp(router, __INITIAL_STATE__) {
   Vue.config.productionTip = false;
@@ -31,7 +32,8 @@ function createApp(router, __INITIAL_STATE__) {
     el: '#app',
     store: appStore,
     router,
-    render: h => h(App),
+    i18n,
+    render: h => h(App)
   });
 
   return { app, store: appStore, router };
