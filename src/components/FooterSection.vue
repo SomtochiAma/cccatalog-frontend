@@ -9,24 +9,24 @@
           <div class="cc-footer-links">
             <div class="menu-footer-links-container">
                 <ul id="menu-footer-links" class="menu">
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/about/contact/">Contact</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/privacy/">Privacy</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/policies/">Policies</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/terms/">Terms</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/about/contact/">{{ $t('links.contact') }}</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/privacy/">{{ $t('links.privacy') }}</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/policies/">{{ $t('links.policies') }}</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://creativecommons.org/terms/">{{ $t('links.term') }}</a></li>
                 </ul>
             </div>
         </div>
       </div>
         <div class="medium-4 cell">
           <div class="column footer_contact">
-            <h6><a href="https://creativecommons.org/about/contact/">We'd love to hear from you!</a></h6>
+            <h6><a href="https://creativecommons.org/about/contact/">{{ $t('footer.text') }}</a></h6>
               <address>
-                Creative Commons<br>
-                PO Box 1866, Mountain View, CA 94042
+                {{$t('Creative Commons')}}<br>
+                {{ $t('address') }}
               </address>
               <ul>
-                <li><a href="mailto:info@creativecommons.org">info@creativecommons.org</a></li>
-                <li><a href="tel:1-415-429-6753">1-415-429-6753</a></li>
+                <li><a href="mailto:info@creativecommons.org">{{ $t('email') }}</a></li>
+                <li><a href="tel:1-415-429-6753">{{ $t('phone') }}</a></li>
               </ul>
           </div>
         </div>
@@ -36,11 +36,11 @@
                about="https://creativecommons.org">
             <p><a class="subfoot"
                    href="https://creativecommons.org/website-icons"
-                   target="blank">Icons</a>
-               by The Noun Project.</p>
-            <p class="website-credit">Website by <a class="subfoot"
+                   target="blank">{{ $t('links.icons') }}</a>
+               {{ $t('footer.noun') }}.</p>
+            <p class="website-credit">{{ $t('footer.website') }}<a class="subfoot"
                href="https://creativecommons.org"
-            target="blank">CC</a>.</p>
+            target="blank">{{ $t('cc') }}</a>.</p>
           </div>
           </aside>
         </div>

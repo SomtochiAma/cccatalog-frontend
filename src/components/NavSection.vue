@@ -6,10 +6,10 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu_icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="/about">About</a></li>
-      <li><a href="/collections">Browse by Collection</a></li>
-      <li id="search-help"><a href="/search-help">Search Guide</a></li>
-      <li><a href="/feedback">Feedback</a></li>
+      <li><a href="/about">{{ $t('links.about') }}</a></li>
+      <li><a href="/collections">{{ $t('links.browse') }}</a></li>
+      <li id="search-help"><a href="/search-help">{{ $t('links.guide') }}</a></li>
+      <li><a href="/feedback">{{ $t('links.feedback') }}</a></li>
       <li class="nav_search" v-if="showNavSearch ==='true'">
         <form class="hero_search-form"
               role="search"
@@ -21,7 +21,7 @@
                   :placeholder="navSearchPlaceholder"
                   v-model.lazy="form.searchTerm">
             <div class="input-group-button">
-              <button type="submit" class="button secondary" value="Search"></button>
+              <button type="submit" class="button secondary" :value="$t('searxh')"></button>
             </div>
           </div>
         </form>

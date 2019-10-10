@@ -1,3 +1,32 @@
 {
-  "message": "hello i18n !!"
+  "Creative Commons": "Creative Commons",
+  "cc": "CC",
+  "search": "Search",
+  "here": "here",
+  "address": "PO Box 1866, Mountain View, CA 94042",
+  "email": "info@creativecommons.org",
+  "phone": "1-415-429-6753",
+  "links": {
+    "about": "About",
+    "browse": "Browse by Collection",
+    "feedback": "Feedback",
+    "guide": "Search Guide",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "policies": "Policies",
+    "term": "Term",
+    "icons": "Icons"
+  },
+  "hero": {
+    "placeholder": "Search for images...",
+    "search-cc": "Search for free content in the public domain and under Creative Commons licenses.",
+    "learn-more": "Learn more about CC licenses",
+    "old-portal": "Looking for the old CC Search portal? Go",
+    "syntax-guide": "See our Search Syntax Guide"
+  },
+  "footer": {
+    "text": "We'd love to hear from you!",
+    "noun": "by The Noun Project",
+    "website": "Website by "
+  }
 }

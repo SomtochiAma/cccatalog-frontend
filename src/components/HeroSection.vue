@@ -11,7 +11,7 @@
                    autofocus="true"
                    class="hero_search-input"
                    type="search"
-                   placeholder="Search for images..."
+                   :placeholder="$t('hero.placeholder')"
                    autocapitalize="none"
                    id="searchTerm"
                    v-model.lazy="form.searchTerm">
@@ -24,23 +24,23 @@
     </form>
     <div class="description">
         <p>
-          Search for free content in the public domain and under Creative Commons licenses.
+          {{$t('hero.search-cc')}}
           <br />
-          Learn more about CC licenses <a href="https://creativecommons.org/share-your-work/licensing-types-examples/" target="_blank" rel="noopener">here</a>.
+          {{$t('hero.learn-more')}} <a href="https://creativecommons.org/share-your-work/licensing-types-examples/" target="_blank" rel="noopener">{{$t('here')}}</a>.
         </p>
     </div>
     <div class="old-search-link">
       <span>
-        Looking for the old CC Search portal? Go
-        <a href="https://oldsearch.creativecommons.org/">here</a>
+        {{ $t('hero.old-portal')}}
+        <a href="https://oldsearch.creativecommons.org/">{{ $t('here')}}</a>
       </span>
     </div>
 
     <div class="search-help-link">
       <span>
-        See our Search Syntax Guide
+        {{ $t('hero.syntax-guide')}}
         <a href="/search-help">
-          here
+          {{ $t('here')}}
           <img class='help-icon'
               src='../assets/help_icon.svg'
               alt='Help' />
